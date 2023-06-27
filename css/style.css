@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #0d0d0d;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  background-color: #141414;
+  padding: 10px 2%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logo1 {
+  height: 70px;
+  width: 200px;
+  float: left;
+  background-image: url("../imagens/Logo1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+}
+
+section.cover-form {
+  width: 100%;
+}
+
+.bg {
+  height: 620px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../imagens/bg.jpg");
+}
+
+.form-container {
+  z-index: 1;
+  position: absolute;
+  width: 400px;
+  margin-right: 40px;
+  right: 30px;
+  top: -2.5%;
+  height: 105%;
+  background-color: white;
+  -webkit-box-shadow: -11px 6px 26px -18px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: -11px 6px 26px -18px rgba(0, 0, 0, 0.48);
+  box-shadow: -11px 6px 26px -18px rgba(0, 0, 0, 0.48);
+}
+
+.form-container h2 {
+  padding: 30px 15px;
+  font-weight: normal;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  font-size: 18px;
+  font-family: 'Cormorant', serif;
+}
+
+.form-container form {
+  margin-top: 8px;
+  padding: 30px;
+  font-family: Poppins;
+}
+
+.form-container form p {
+  font-size: 15px;
+}
+
+.form-container form input[type=text] {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: 45px;
+  outline: none;
+  line-height: 45px;
+}
+
+.form-container form input[type=email] {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: 45px;
+  outline: none;
+  line-height: 45px;
+}
+
+.form-container form input[type=number] {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: 45px;
+  outline: none;
+  line-height: 45px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-waper:not(:first-child) {
+  margin-top: 40px;
+}
+
+.form-container form input[type=submit] {
+  width: 100%;
+  padding: 20px 0;
+  text-transform: uppercase;
+  background-color: #600101;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.5s;
+
+}
+
+.form-container form input[type=submit]:hover {
+  background-color: #240000;
+}
+
+.form-waper .campos {
+  color: #646262;
+  font-family: 'Poppins';
+  font-size: 13px;
+}
+
+
+section.chamada {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+section.chamada .container {
+  background-color: #1a0203;
+  padding: 30px 0;
+}
+
+section.chamada h2 {
+  width: 96%;
+  color: white;
+  max-width: 500px;
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Cormorant', serif;
+  font-weight: 100;
+}
+
+section.chamada p {
+  color: white;
+  margin-top: 5px;
+}
+
+.flex-mosaico {
+  display: flex;
+}
+
+.item-1-mosaico {
+  background-position: center;
+  background-size: cover;
+  width: 55%;
+}
+
+.item-2-mosaico {
+  padding: 40px;
+  width: 45%;
+  background-color: #212121;
+  border-bottom: solid 1px #292929;
+  color: white;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: #121212;
+  color: white;
+  border-top: solid 2px #404040;
+}
+
+footer p {
+  margin-top: 20px;
+  font-family: 'Poppins';
+}
+
+@media screen and (max-width: 960px) {
+  .bg {
+    text-align: center;
+    padding: 20px 0;
+    height: auto;
+  }
+
+  .form-container {
+    position: static;
+    display: inline-block;
+    margin: 0 auto;
+    width: 96%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-mosaico {
+    display: block;
+  }
+
+  .item-1-mosaico {
+    width: 100%;
+    padding-top: 100%;
+
+  }
+
+  .item-2-mosaico {
+    text-align: justify;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+
+  header {
+    text-align: center;
+  }
+
+  .logo1 {
+    display: inline-block;
+  }
+}
